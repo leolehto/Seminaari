@@ -165,7 +165,7 @@ scraped_data.append(item_data)
 
 *Jälkikäteen ajateltuna Scraperin valmistumiseen ei olisi ehkä pitänyt mennä niin kauan kuin siihen meni vaikka aihe oli uusi. Muut kurssit ja niiden aikataulupaineet vaikuttivat toki tähän hieman. Jostain syystä jäin jumiin hieman liian pitkäksi aikaa useamman sivun läpikäymiseen, mikä lopulta ratkesi nopeasti Seleniumin web driverilla kun siihen paneutui tarpeeksi.* 
 
-*Koodiin olen lopulta tyytyväinen vaikka harjaantunemman koodarin silmään osuisi varmasti parannettavaa. Web driverilla sivun ajaminen ja läpikäyminen oli mielestäni hyvä oivallus ja koska bueatifulsoup oli jo käytössä koin, että kahden kirjaston yhteistyö scraperin toiminnassa on ok ratkaisu. Saatuani kuitenkin ulkopuolelta vinkin siitä, että saman lopputuloksen voisi saavuttaa pelkällä beautifulsoupilla tai pelkällä seleniumilla tein testimielessä muutoksia koodiin ja lopulta pääsin samaan toiminta logiikkaan pelkällä bs:llä.*
+*Koodiin olen lopulta tyytyväinen vaikka harjaantunemman koodarin silmään osuisi varmasti parannettavaa. Web driverilla sivun ajaminen ja läpikäyminen oli mielestäni hyvä oivallus ja koska beautifulsoup oli jo käytössä koin, että kahden kirjaston yhteistyö scraperin toiminnassa on ok ratkaisu. Saatuani kuitenkin ulkopuolelta vinkin siitä, että saman lopputuloksen voisi saavuttaa pelkällä beautifulsoupilla tai pelkällä seleniumilla tein testimielessä muutoksia koodiin ja lopulta pääsin samaan toiminta logiikkaan pelkällä bs:llä.*
 ```python
 def ScrapeTori(num_pages=2):
     base_url = 'https://www.tori.fi/koko_suomi/sisustus_ja_huonekalut?ca=18&q=sisustus%20ja%20huonekalut&cg=3020&st=s&w=3&o={}'
