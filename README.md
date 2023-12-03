@@ -18,7 +18,7 @@
 * Viimeistely ja tietokantaan yhdistäminen
 
 *Aiheen tutkiminen lähti liikkeelle puhtaasti googlaamalla ja Chat GPT:tä hyödyntämällä, sillä scraper konseptina oli vieras ja osaaminen Pythonista alkeiden tasolla. Python valikoitui kieleksi sen perusteella, että se todettiin useassa lähteessä parhaaksi scraperin toteuttamiseen mm. sen sisältämien kirjastojen vuoksi. Pythonin syntaksi on myös suhteellisen helppo sisäistää vaikka aikaisempaa kokemusta ei hirvästi ole*
-
+## Huomioitavaa
 *Ennen varsinaisen koodaamisen aloittamista on hyvä ottaa huomioon muutamia käytäntöjä scraperiin liittyen. Sivun **robots.txt** ja **käyttöehdot** kannattaa käydä läpi sen varalta, että scraping on kielletty kyseisellä sivulla. Kerätty data ei saa olla tekijänoikeuslain suojassa tai sisältää henkilötietoja. Yksityistä tietoa ei myöskään tule levittää julkiseen tietoon. Sivustoa ei tule kuormittaa liikaa, jotta pääsyä sivustolle ei estetä. Pahimmillaan vääränlaisesta scrapingista voi koitua oikeudellisia toimia, mutta julkisen tiedon hakeminen omaan käyttöön esim. kouluprojektia varten tuskin aiheuttaa ongelmia.*
 
 ## Käytetyt kirjastot
