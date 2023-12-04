@@ -201,4 +201,10 @@ def ScrapeTori(num_pages=2):
 *Mielestäni tämä ratkaisu on lopulta parempi, sillä webdriver jää kokonaan pois, mikä tekee koodista vielä simppelimmän ja driveria ei tarvitse asentaa koodin ajamiseen. Tästä opin sen, että ensimmäinen toimiva ratkaisu ei välttämättä ole paras vaan joskus on hyvä tutkia voisiko saman tuloksen saada tehokkaammin.* 
 
 *Tärkeimpinä oppeina tästä projektista jäivät laajemman ohjelman koodaaminen Pythonilla ja sen kirjastojen hyödyntäminen sekä web scraping ja sen käytännöt. Hyödynsin scaperin koodaamisessa myös chat GPT:tä ja opin minkälaisia kysymyksiä kannattaa esittää. Tärkeää on muodostaa oma ratkaisu ja ottaa tekoälyltä siihen mukaan esimerkkejä tai vaihtoehtoja.*
+## Lähteet
+`https://realpython.com/python-web-scraping-practical-introduction/`
+`https://chat.openai.com/`
+`https://realpython.com/beautiful-soup-web-scraper-python/`
+`https://oxylabs.io/blog/python-web-scraping`
+*Kirjastot osiossa mainitut linkit*
 
