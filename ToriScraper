@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as BS
 
+# get numeric value for each condition
 def translate_condition_to_number(condition):
     condition_mapping = {
         "Uusi": 5,
@@ -10,6 +11,7 @@ def translate_condition_to_number(condition):
         "Huono": 1
     }
     return condition_mapping.get(condition, 0)
+
 def cond(link):
     url = link
 
@@ -28,6 +30,7 @@ def cond(link):
     return(cond_value)
 
 def ScrapeTori(num_pages=2):
+    #change the url based on products wanted
     base_url = 'https://www.tori.fi/koko_suomi/sisustus_ja_huonekalut?ca=18&q=sisustus%20ja%20huonekalut&cg=3020&st=s&w=3&o={}'
 
     scraped_data = []
@@ -46,16 +49,17 @@ def ScrapeTori(num_pages=2):
         if not products:
             print(f"No items found on page {page_number}")
             continue
-
+        #find title, price and link for each product per page
         for i, product in enumerate(products, start=1):
             try:
                 title = product.find('div', class_="li-title").contents[0]
                 price = product.find('p', class_="list_price ineuros").contents[0].replace(" ", "")
                 product_url = product.get('href')
 
+                #remove non digits from price and convert to int
                 cleaned_price = ''.join(p for p in price if p.isdigit())
                 price_int = int(cleaned_price)
-
+                #find image
                 image_container = product.find('div', class_='image_container')
                 img_url = 'N/A'
                 if image_container:
@@ -76,12 +80,12 @@ def ScrapeTori(num_pages=2):
                 }
 
                 scraped_data.append(item_data)
-
+                #follow the process
                 print(f"Page {page_number}, Item {i} - Title: {item_data['Title']}, Price: {item_data['Price']}, Image URL: {item_data['Image URL']}, Condition: {item_data['Condition']}")
 
             except Exception as e:
                 print(f"Error processing item {i} on page {page_number}: {e}")
-
+        #check amount of products scraped
         print(f'Page {page_number} - listings: {len(scraped_data)}')
 
     return scraped_data
